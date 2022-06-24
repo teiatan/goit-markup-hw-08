@@ -1,0 +1,54 @@
+.team-members {
+  background-color: $button-background-color;
+}
+
+.team-members__item {
+  box-shadow: 0px 1px 3px $middle-team-shadow-color, 0px 1px 1px $dark-team-shadow-color,
+    0px 2px 1px $light-team-shadow-color;
+  border-radius: 0px 0px 4px 4px;
+  background-color: $aditional-text-color;
+  min-height: 368px;
+  width: 270px;
+  display: block;
+}
+
+.team-members__img {
+  display: block;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+}
+
+.team-members__name {
+  font-weight: 500;
+  font-size: $aditional-font-size;
+  line-height: $small-line-height;
+  color: $title-text-color;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team-members__profession {
+  font-size: $aditional-font-size;
+  line-height: $small-line-height;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team-members__social-networks {
+  padding: 0;
+  margin: 16px 32px 30px 16 px;
+}
+
+.social-networks__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px 30px 32px;
+}
+
+.social-networks__icon {
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  transition: fill $animation;
+}

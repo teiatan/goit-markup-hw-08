@@ -1,0 +1,20 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: $huge-font-size;
+  line-height: $small-line-height;
+  margin-right: 93px;
+}
+
+.logo__left {
+  color: $acent-color;
+}
+
+.logo__right {
+  color: $title-text-color;
+}
+
+.logo__right--inverse {
+  color: $aditional-text-color;
+}

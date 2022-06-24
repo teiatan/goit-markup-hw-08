@@ -1,0 +1,114 @@
+.portfolio__title {
+  display: none;
+}
+
+.portfolio__filter {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio__works {
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.works__item {
+  height: 404px;
+  width: 370px;
+  margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 1px 1px $middle-team-shadow-color, 0px 4px 4px $soft-shadow-color,
+      1px 4px 6px $darkest-shadow-color;
+  }
+}
+
+.works__caption {
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid $light-border-color;
+  border-right: 1px solid $light-border-color;
+  border-bottom: 1px solid $light-border-color;
+}
+
+.filter__button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $aditional-font-size;
+  line-height: $bigger-line-height;
+  color: $title-text-color;
+  background-color: $button-background-color;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition: color $animation, background-color $animation, box-shadow $animation;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $aditional-text-color;
+    background-color: $acent-color;
+    box-shadow: 0px 3px 1px $lightest-shadow-color, 0px 1px 2px $softer-shadow-color,
+      0px 2px 2px $middle-team-shadow-color;
+  }
+}
+
+.works__link {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  display: inline-block;
+}
+
+.works__name {
+  font-weight: 700;
+  font-size: $large-font-size;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+  padding: 20px 24px 0px 24px;
+}
+
+.works__type {
+  font-size: $aditional-font-size;
+  line-height: $large-line-height;
+  color: inherit;
+  padding: 4px 24px 20px 24px;
+  height: 54px;
+}
+
+.works__picture {
+  position: relative;
+  overflow: hidden;
+}
+
+.works__overlay {
+  content: '';
+  padding: 63px 24px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $overlaay-background-color;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $aditional-text-color;
+  transform: translateY(100%);
+  transition: transform $animation;
+}
+
+.works__item:hover .works__overlay,
+.works__item:hover .works__overlay {
+  transform: translateY(0);
+}

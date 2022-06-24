@@ -1,0 +1,245 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $light-team-shadow-color;
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: $aditional-text-color;
+  box-shadow: 0px 1px 3px $middle-team-shadow-color, 0px 1px 1px $dark-team-shadow-color,
+    0px 2px 1px $light-team-shadow-color;
+  border-radius: 4px;
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  border: 1px solid $lightest-shadow-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: $aditional-text-color;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: fill $animation;
+}
+
+.modal__title {
+  font-family: Roboto;
+  display: block;
+  font-weight: 700;
+  font-size: $largest-font-size;
+  line-height: $little-line-height;
+  height: 23px;
+  color: $title-text-color;
+  font-style: normal;
+  width: 448px;
+  text-align: justify;
+
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2px;
+}
+
+.form__label {
+  margin-top: 10px;
+  letter-spacing: 0.01em;
+  color: $main-text-color;
+  font-family: Roboto;
+}
+
+.form__container input {
+  min-height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  padding-left: 42px;
+}
+
+.form__textarea {
+  margin-top: 4px;
+  resize: none;
+  min-height: 120px;
+  padding: 12px 16px;
+  font-family: Roboto;
+  letter-spacing: 0.01em;
+  border: 1px solid $dark-border-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border $animation;
+
+  &::placeholder {
+    font-family: Roboto;
+    letter-spacing: 0.01em;
+    color: $modal-text-color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-within {
+    cursor: pointer;
+    border: 1px solid $acent-border-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+  }
+
+}
+
+.form__checkbox {
+  margin: 0;
+  display: flex;
+  justify-items: center;
+  margin-top: 8px;
+  position: relative;
+}
+
+.checkbox__container {
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border $animation, background-color $animation;
+}
+
+.checkbox__input {
+  margin: 0 8.38px 0 12px;
+  width: 16px;
+  height: 15px;
+  opacity: 0;
+  /*   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+.form__checkbox input {
+  margin: 0 8.38px 0 12px;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox__input:checked + .checkbox__container {
+  background-color: $acent-color;
+  border: none;
+}
+
+.checkbox__label {
+  margin: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-text-color;
+  cursor: pointer;
+}
+
+.checkbox__link {
+  color: $acent-color;
+  text-decoration-skip-ink: none;
+}
+
+.checkbox__icon {
+  display: inline-block;
+  /*position: absolute;
+top: 50%;
+left: 50%; 
+transform: translate(-50% -50%); */
+}
+
+.form__button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: $acent-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px $bow-shadow-color;
+  display: block;
+  letter-spacing: 0.06em;
+  color: $aditional-text-color;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  outline: none;
+  transition: background $animation;
+  &:hover,
+  &:focus {
+    background: $dark-acent-color;
+    cursor: pointer;
+  }
+}
+
+.form__input {
+  position: relative;
+  margin-top: 4px;
+  transition: fill $animation;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-within {
+    fill: $acent-color;
+    cursor: pointer;
+  }
+}
+
+.input__area {
+  transition: border $animation;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-within {
+     cursor: pointer;
+    border: 1px solid $acent-border-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+  }
+}
+
+
+.input__icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}

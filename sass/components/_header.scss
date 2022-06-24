@@ -1,0 +1,94 @@
+.header {
+    
+    &__container {
+        background-color: $button-background-color;
+        min-height: 80px;
+        width: 100%;
+    }
+
+    &__fixator {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &__mobile-menu {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+
+        @include tablet {
+                display: none;
+            }
+    }
+
+    &__nav {
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    &__pages {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__contacts {
+        @include mobile {
+            display: none;
+        }
+
+    }
+}
+
+// .pages {
+
+//     &__item: not(:last-child) {
+
+//     }
+
+//     &__link {
+
+//         &::after {
+
+//         }
+
+//         &:hover::after {
+
+//         }
+
+//         &:focus::after {
+
+//         }
+
+//         &--active {
+
+//         }
+
+//         &--active::after {
+
+//         }
+
+//     }
+
+// }
+
+// .contacts {
+//     &__link {
+
+//     }
+
+//     &__item:not(:first-child) {
+        
+//     }
+
+//     &__icon {
+
+//     }
+// }

@@ -1,0 +1,28 @@
+
+
+@mixin mobile () {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet () {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop () {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+
+// Центрование
+
+// @mixin centered($position: center) {
+//     display: flex;
+//     justify-items: $position;
+//     aling-items: center;
+// }
