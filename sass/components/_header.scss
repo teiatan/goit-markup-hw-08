@@ -1,9 +1,9 @@
 .header {
 
     position: relative;
-    
+        
     &__container {
-        background-color: $button-background-color;
+        background-color: $aditional-text-color;
         min-height: 60px;
         width: 100%;
     }
@@ -13,16 +13,8 @@
         position: fixed;
         top: 0;
         left: 0;
+        border-bottom: 1px solid $header-border-color;
     }
-
-    &__mobile-menu {
-       
-        @include tablet {
-            display: none;
-        }
-
-    }
-
 
     &__nav {
         min-height: 60px;
@@ -32,18 +24,20 @@
         padding: 0 15px;
     }
 
-    &__pages {
-        @include mobile {
-            display: none;
+    &__mobile-container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        min-height: 796px;
+        background-color: $aditional-text-color;
+        
+        &.is-open {
+            display: block;
         }
     }
 
-    &__contacts {
-        @include mobile {
-            display: none;
-        }
-
-    }
 }
 
 .menu-button {
@@ -81,30 +75,28 @@
     &.is-open .menu-button__icon-open {
         display: none;
     }
+
+    @include tablet {
+        display: none;
+    }
 }
 
-//  position: relative;
 
-
-//  id="menu-container" data-menu
-
-//  display: none;
-//  position: absolute;
-//  top: 100%;
-//  left: 0;
-//  width: 100%;
-
-// &. is-open {
-//     display: block;
-// }
-
-// .pages {
-
+.pages {
+    
 //     &__item: not(:last-child) {
 
 //     }
 
-//     &__link {
+    &__link {
+
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $mobile-pages-size;
+        line-height: $main-line-height;
+        color: $title-text-color;
+        transition: color $animation;
 
 //         &::after {
 
@@ -126,20 +118,25 @@
 
 //         }
 
-//     }
+    }
 
-// }
+}
 
-// .contacts {
-//     &__link {
+.contacts {
+    &__link {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: $mobile-contacts-font-size;
+        line-height: $main-line-height;
+        color: $main-text-color;
+    }
 
-//     }
-
-//     &__item:not(:first-child) {
+    &__item:not(:first-child) {
         
-//     }
+    }
 
-//     &__icon {
-
-//     }
-// }
+    &__icon {
+        display: none;
+    }
+}

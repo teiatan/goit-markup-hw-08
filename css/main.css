@@ -1,3 +1,59 @@
+@charset "UTF-8";
+/* убрать лишние классы из HTML, заменить на @extend %title */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #757575;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
+  padding-top: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 700;
+  text-align: center;
+  color: #212121;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: none;
+  font-style: normal;
+  color: #2196f3;
+  fill: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .logo {
   text-decoration: none;
   font-family: Raleway, sans-serif;
@@ -23,7 +79,7 @@
 }
 
 .header__container {
-  background-color: #f5f4fa;
+  background-color: #ffffff;
   min-height: 60px;
   width: 100%;
 }
@@ -33,12 +89,7 @@
   position: fixed;
   top: 0;
   left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .header__mobile-menu {
-    display: none;
-  }
+  border-bottom: 1px solid #ECECEC;
 }
 
 .header__nav {
@@ -55,16 +106,18 @@
   padding: 0 15px;
 }
 
-@media screen and (max-width: 480px) {
-  .header__pages {
-    display: none;
-  }
+.header__mobile-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 796px;
+  background-color: #ffffff;
 }
 
-@media screen and (max-width: 480px) {
-  .header__contacts {
-    display: none;
-  }
+.header__mobile-container.is-open {
+  display: block;
 }
 
 .menu-button {
@@ -110,5 +163,30 @@
 
 .menu-button.is-open .menu-button__icon-open {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.pages__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.14;
+  color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

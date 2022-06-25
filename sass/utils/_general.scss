@@ -1,0 +1,75 @@
+/* убрать лишние классы из HTML, заменить на @extend %title */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: $main-text-color;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: $aditional-text-color;
+  padding-top: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// .list {
+  // list-style: none;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // padding-left: 0;
+// }
+
+.title {
+  font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.67;
+  text-align: center;
+  color: $title-text-color;
+//   margin-bottom: 50px;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: none;
+  font-style: normal;
+  color: $acent-color;
+  fill: $acent-color;
+  transition: color $animation;
+}
+
+// .container {
+//   width: 1230px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+// }
+
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
