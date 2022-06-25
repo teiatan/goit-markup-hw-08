@@ -1,4 +1,6 @@
 .header {
+
+    position: relative;
     
     &__container {
         background-color: $button-background-color;
@@ -81,7 +83,20 @@
     }
 }
 
- 
+//  position: relative;
+
+
+//  id="menu-container" data-menu
+
+//  display: none;
+//  position: absolute;
+//  top: 100%;
+//  left: 0;
+//  width: 100%;
+
+// &. is-open {
+//     display: block;
+// }
 
 // .pages {
 
