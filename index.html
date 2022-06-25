@@ -30,14 +30,16 @@
                         <li class="pages__item"><a href="./portfolio.html" class="pages__link link">Портфолио</a></li>
                         <li class="pages__item"><a href="" class="pages__link link">Контакты</a></li>
                     </ul>
+                    
 
-                    <button type="button" class="header__mobile-menu">
-                        <svg width="40" height="40">
-                            <use href="./images/icons.svg#mobile-menu-open"></use>
-                            <use href="./images/icons.svg#mobile-menu-close"></use>
+                    <button type="button" class="header__mobile-menu menu-button " aria-expended="false" data-menu-button>
+                        <svg width="24" height="18.67" aria-label="Переключатель мобильного меню">
+                            <use class="menu-button__icon-open" margin="auto" href="./images/icons.svg#mobile-menu-open"></use>
+                            <use class="menu-button__icon-close" margin="auto" href="./images/icons.svg#mobile-menu-close"></use>
                         </svg>
                     </button>
-                    </nav>
+                    
+                </nav>
                 <ul class="header__contacts contacts">
                     <li class="contacts__item">
                         <a href="mailto:info@devstudio.com" class="contacts__link link">
@@ -342,6 +344,7 @@
         </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
