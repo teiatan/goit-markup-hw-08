@@ -55,12 +55,25 @@
 
     &__icon-close {
         display: none;
+        transition: fill $animation;
+    }
+
+    &__icon-open {
+        transition: fill $animation;
+
+        &:hover, &:focus {
+            fill: $acent-color;
+        }
     }
 
     &.is-open .menu-button__icon-close {
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        &:hover, &:focus {
+            fill: $acent-color;
+        }
     }
 
     &.is-open .menu-button__icon-open {
