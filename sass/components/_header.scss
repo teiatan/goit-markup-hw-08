@@ -30,11 +30,12 @@
         top: 100%;
         left: 0;
         width: 100%;
-        min-height: 796px;
+        min-height: 100vh;
         background-color: $aditional-text-color;
         
         &.is-open {
             display: block;
+
         }
     }
 
@@ -123,20 +124,45 @@
 }
 
 .contacts {
+
     &__link {
         text-decoration: none;
         font-style: normal;
         font-weight: 500;
-        font-size: $mobile-contacts-font-size;
-        line-height: $main-line-height;
-        color: $main-text-color;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
     }
 
     &__item:not(:first-child) {
-        
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            color: #2196F3;
     }
 
     &__icon {
         display: none;
+    }
+}
+
+.header-socnet {
+    
+
+    &__item {
+        
+    }
+
+    &__link {
+        display: inline-flex;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #2196F3;
     }
 }
